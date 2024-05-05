@@ -1,0 +1,70 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+    background: rgb(12, 103, 103);
+    padding-bottom: 80px;
+}
+
+.form__contenair{
+    display: flex;
+    flex-direction: column;
+    // width: 100%;
+    // height: 200px;
+    // background-color:rgb(12, 103, 103);
+    align-items: center;
+    justify-content: center;
+    // gap: 5px;
+    // padding-top: 50px;
+    // padding-bottom: 50px;
+}
+.form__title{
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.form__mail{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* gap: 32px; */
+    /* background: white; */
+    box-shadow: 0 0 32px 0 rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    width: 500px;
+    padding: 16px;
+    border: 0;
+    font-family: 'Roboto';
+}
+.form__message{
+    // display: flex;
+    // flex-direction: column;
+    // align-items: flex-start;
+    /* gap: 32px; */
+    /* background: white; */
+    box-shadow: 0 0 32px 0 rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    width: 500px;
+    padding: 16px;
+    font-family: 'Roboto';
+    height: 300px;
+}
+.form__button{
+    background-color:rgba(222, 139, 57, 0.789);
+    border: 0;
+    padding: 10px;
+    color: white;
+    margin-top: 20px;
+    width: 100px;
+}
+@media (max-width: 768px){
+    .footer{
+       margin: 0 auto;
+        p{
+        font-size: $font-s;
+        }
+    }
+}
