@@ -58,29 +58,24 @@
 // }
 .navigation__li a {
   font-family: "Roboto", sans-serif;
-      font-size: $font-m;
-      font-weight: $font-w-m;
-      color: $nav-color;
-  &:hover, &.nav-active {
-    position: relative;
+  font-size: $font-m;
+  font-weight: $font-w-m;
+  color: $nav-color;
+  position: relative;
 
-    &::after {
-      content: "";
-      height: 2px;
-      width: 100%;
-      background: $nav-color;
-      position: absolute;
-      bottom:0;
-      left: 0;
-      -webkit-animation: anim 0.3s ease forwards;
-      animation: anim 0.6s ease forwards;
+  &::after {
+    content: "";
+    height: 2px;
+    width: 0; // Change this to 0
+    background: $nav-color;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease-in-out; // Change this to transition
+  }
 
-      @-webkit-keyframes anim {
-        to {
-          width: 100%;
-        }
-      }
-    }
+  &:hover::after, &.nav-active::after {
+    width: 100%; // Move this to the hover and active state
   }
 }
 }
