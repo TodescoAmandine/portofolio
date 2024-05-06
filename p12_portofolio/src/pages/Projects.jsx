@@ -1,18 +1,20 @@
-import React from 'react';
-import Navigation from '../components/Navigation';
-import Footer from '../components/Footer';
-import { useParams } from 'react-router-dom';
+import React, { useContext } from 'react';
+import { ProjectsContext } from '../pages/Projectcontext';
 
+// ...
 
 const Projects = () => {
-    const { id } = useParams();
-    return (
-        <div id='Projets__page'>
-            <Navigation />
-            <ProjectDetails/>
-            <Footer/>
-        </div>
-    );
+  const { id } = useParams();
+  const projectsData = useContext(ProjectsContext);
+  const project = projectsData.find(project => project.id === id);
+
+  return (
+    <div id='Projets__page'>
+      <Navigation />
+      <ProjectDetails project={project} />
+      <Footer/>
+    </div>
+  );
 };
 
 export default Projects;
