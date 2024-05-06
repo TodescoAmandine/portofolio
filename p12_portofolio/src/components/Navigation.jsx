@@ -12,9 +12,9 @@ const Navigation = () => {
         <div className='navigation'>
             <ul className='navigation__ul'>
                 <li className='navigation__li'>
-                    <NavLink to="/" className={activeLink === 'home' ? 'nav-active' : ''} onClick={handleClick} name='home'>
+                <a href="#hero" className={(nav) => (nav.isActive ? "nav-active" : "")}>
                         Home
-                    </NavLink>
+                    </a>
                 </li>
                 <li className='navigation__li'>
                 <a href="#projects" className={(nav) => (nav.isActive ? "nav-active" : "")}>

@@ -9,8 +9,8 @@ import MySkills from "../components/MySkills";
 const Home = () => {
   return (
     <div>
-        <Navigation />
-        <HeroSection imgbanner={BannerImage} 
+        <Navigation id='navi' />
+        <HeroSection id='hero' imgbanner={BannerImage} 
         title={ <span>Welcome<br /> to my portofolio! <br /> I'm Amandine</span>}
         about={ <span>I'm a web junior developper. For me the web is a place where I can express my creativity and my passion for technology. I'm always looking for new challenges and I'm ready to learn new things. I'm a hard worker.
         </span>}

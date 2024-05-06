@@ -7,7 +7,7 @@ const Form = () => {
     };
 
     return (
-        <div className="form">
+        <div id="footer">
             <form className='form__contenair' onSubmit={handleSubmit}>
                 <label  className='form__title' htmlFor="email">Email:</label>
                 <input className='form__mail' type="email" id="email" required />

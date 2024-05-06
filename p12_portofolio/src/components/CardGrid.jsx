@@ -1,8 +1,8 @@
 import React from 'react';
 import Card from './Card';
-// import image1 from '../assets/img/ohmyfood.png';
-// import image2 from '../assets/img/LOGO.png';
-// import image3 from '../assets/img/Logo_sophie.png';
+
+
+
 import aboutData from '../about.json'; 
 
 const CardGrid = () => {
