@@ -13,12 +13,24 @@
     position: relative;
     opacity: 0.5;
   //  animation: slide 50s linear infinite;
+  animation-name: back;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes back {
+  0%{
+    filter:hue-rotate(0deg);
+  }
+  100%{
+    filter:hue-rotate(360deg);
 }
 
-@keyframes slide {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-100%); }
 }
+// @keyframes slide {
+//     0% { transform: translateX(0); }
+//     100% { transform: translateX(-100%); }
+// }
   #tag {
     position: absolute;
     color: rgb(12, 103, 103);
@@ -43,7 +55,15 @@
   width: 300px;
  }
 }
+// @keyframes move {
+//   0% { transform: translateX(0); }
+//   50% { transform: translateX(50px); }
+//   100% { transform: translateX(0); }
+// }
 
+// .animated-image {
+//   animation: move 2s infinite;
+// }
 @media (max-width: 768px) {
 
   #banner {

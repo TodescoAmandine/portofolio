@@ -1,0 +1,56 @@
+.projectdetails__container{
+    display: flex;
+    padding: 112px 85px;
+
+    gap: 80px;
+    background: rgba(208 222 222);
+
+
+.projectdetails__image{
+    width: 50vw;
+
+}
+
+.projectdetails__links{
+
+    display: flex;
+    flex-direction: row;
+}
+
+
+    .projectdetails__content{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .projectdetails__content--title{
+    font-size: 24px;
+    font-weight: 00;
+    line-height: 34px;
+    font-family: 'Roboto', sans-serif;
+    color: $nav-color;
+    }
+    .projectdetails__contents{
+        display: flex;
+        flex-direction: column;
+    }
+    .projectdetails__content--p{
+       font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;  
+        
+    }
+
+    .projectdetails__cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 42.6px;
+    width: 100%;
+    }
+    .projectdetails__content--git{
+        width: 2vw;
+    }
+}
