@@ -1,19 +1,19 @@
-#details_page{
+#details_page {
     background: rgb(235, 242, 242);
     width: 100vw;
     height: 100vh;
-}
-
-.projectdetails__container{
+  }
+  
+  .projectdetails__container {
     display: flex;
     padding: 112px 85px;
     gap: 80px;
-
-.button{
-    height: 50px;
-
-.projectdetails__button{
-       background-color:$nav-color ;
+  
+    .button {
+      height: 50px;
+  
+      .projectdetails__button {
+        background-color: $nav-color;
         outline: none;
         border: none;
         color: white;
@@ -22,124 +22,169 @@
         display: flex;
         align-items: baseline;
         text-decoration: none;
-    cursor: pointer;
-
-        &:hover {
-            background-color: darken(rgb(230,179,176), 10%);
-        }
-    
-        &:active {
-            background-color: darken(rgb(230,179,176), 20%);
-            color: white;
-        }
-        #arrow__back{
-            transform: rotate(-45deg);
-            margin-right: 10px;
-        }
-}
-}
-.projectdetails__image{
-    width: 50vw;
-    box-shadow: 0 0 32px 0 rgba(0, 0, 0, 0.15);
-}
-
-.projectdetails__links{
-
-    display: flex;
-    flex-direction: row;
-}
-
-
-    .projectdetails__content{
-        display: flex;
-        flex-direction: column;
-
-    }
-    .projectdetails__content--title{
-    font-size: 24px;
-    font-weight: 00;
-    line-height: 34px;
-    font-family: 'Roboto', sans-serif;
-    color: $nav-color;
-    }
-    .projectdetails__contents{
-        display: flex;
-        flex-direction: column;
-    }
-    .projectdetails__content--p{
-       font-family: 'Roboto', sans-serif;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 20px;          
-    }
-    .projectdetails__content--link{
-               font-family: 'Roboto', sans-serif;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 20px; 
-        transition: border-bottom 0.3s ease-in-out;
-        overflow: hidden;
-        position: relative;
-        flex-wrap: nowrap;
-        white-space: nowrap;
         cursor: pointer;
-        
-        &::after {
-            content: '';
-            position: absolute;
-            width: 0;
-            height: 1.33px;
-            background: currentColor;
-            bottom: 0;
-            left: 50%;
-            transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+  
+        &:hover {
+          background-color: darken(rgb(230, 179, 176), 10%);
         }
-    
-        &:hover::after {
-            width: 100%;
-            left: 0;
+  
+        &:active {
+          background-color: darken(rgb(230, 179, 176), 20%);
+          color: white;
         }
+        #arrow__back {
+          transform: rotate(-45deg);
+          margin-right: 10px;
+        }
+      }
     }
-
-
-    .projectdetails__cards{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 42.6px;
-    width: 100%;
+    .projectdetails__image {
+      width: 500px;
+      height: auto;
+      box-shadow: 0 0 32px 0 rgba(0, 0, 0, 0.15);
     }
-
+  
+    .projectdetails__links {
+      display: flex;
+      flex-direction: row;
+      margin: 20px 0;
+    }
+  
+    .projectdetails__content {
+      display: flex;
+      flex-direction: column;
+    }
+    .projectdetails__content--title {
+      font-size: 24px;
+      font-weight: 00;
+      line-height: 34px;
+      font-family: "Roboto", sans-serif;
+      color: $nav-color;
+    }
+    .projectdetails__contents {
+      display: flex;
+      flex-direction: column;
+    }
+    .projectdetails__content--p {
+      font-family: "Roboto", sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 20px;
+    }
+    .projectdetails__content--link {
+      font-family: "Roboto", sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 20px;
+      transition: border-bottom 0.3s ease-in-out;
+      overflow: hidden;
+      position: relative;
+      flex-wrap: nowrap;
+      white-space: nowrap;
+      cursor: pointer;
+      display: inline; /* Make the link an inline element */
+      margin-bottom: 0; /* Remove bottom margin */
+      padding-bottom: 0;
+  
+      &::after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 1.33px;
+        background: currentColor;
+        bottom: 0;
+        left: 50%;
+        transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+      }
+  
+      &:hover::after {
+        width: 100%;
+        left: 0;
+      }
+    }
+  
+    .projectdetails__cards {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 42.6px;
+      width: 100%;
+    }
+  
     @keyframes bounce {
-        0%, 20%, 50%, 80%, 100% {
-            transform: translateY(0);
-        }
-        40% {
-            transform: translateY(-5px);
-        }
-        60% {
-            transform: translateY(-3px);
-        }
+      0%,
+      20%,
+      50%,
+      80%,
+      100% {
+        transform: translateY(0);
+      }
+      40% {
+        transform: translateY(-5px);
+      }
+      60% {
+        transform: translateY(-3px);
+      }
     }
-    .projectdetails__content--git{
-        width: 35px;
-    height: 35px;
-    margin-left: 20px;
-    transition: transform 0.5s;
-    cursor: pointer;
-    &:hover {
+    .projectdetails__content--git {
+      width: 35px;
+      height: 35px;
+      margin: 0 20px;
+      transition: transform 0.5s;
+      cursor: pointer;
+      &:hover {
         animation: bounce 0.5s;
+      }
     }
-    
+  
+    .tag-button {
+      background-color: $nav-color;
+      outline: none;
+      border: none;
+      margin: 5px;
+      color: white;
+    }
+  }
+  
+
+  @media (min-width: 769px) and (max-width: 1024px) {
+    // Styles for tablets go here
+    .projectdetails__container{
+        padding: 80px 60px;
+    gap: 60px;
+
+    .projectdetails__image {
+      width: 400px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .projectdetails__container{
+        padding: 60px 40px;
+        gap: 40px;
+        flex-direction: column;
+    }   
+
+    .projectdetails__image {
+      width: 100%;
     }
 
-    .tag-button{
-        background-color:$nav-color ;
-        outline: none;
-        border: none;
-        margin: 5px;
-        color: white;
-
+    .projectdetails__content--title {
+      font-size: 20px;
     }
+
+    .projectdetails__content--p {
+      font-size: 14px;
+    }
+
+    .projectdetails__content--link {
+      font-size: 14px;
+    }
+
+    .projectdetails__content--git {
+      width: 30px;
+      height: 30px;
+    }
+  }
 }

@@ -1,4 +1,4 @@
-#navi{
+#navi {
   position: relative;
   z-index: 2;
 }
@@ -21,7 +21,6 @@
   right: 0;
   z-index: 1000;
 
-
   .navigation__ul {
     display: flex;
     justify-content: space-between;
@@ -30,48 +29,78 @@
     gap: 50px;
   }
 
+  .navigation__li a {
+    font-family: "Roboto", sans-serif;
+    font-size: $font-m;
+    font-weight: $font-w-m;
+    color: $nav-color;
+    position: relative;
 
-.navigation__li a {
-  font-family: "Roboto", sans-serif;
-  font-size: $font-m;
-  font-weight: $font-w-m;
-  color: $nav-color;
-  position: relative;
+    &::after {
+      content: "";
+      height: 2px;
+      width: 0; // Change this to 0
+      background: $nav-color;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      transition: width 0.3s ease-in-out; // Change this to transition
+    }
 
-  &::after {
-    content: "";
-    height: 2px;
-    width: 0; // Change this to 0
-    background: $nav-color;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    transition: width 0.3s ease-in-out; // Change this to transition
-  }
-
-  &:hover::after, &.nav-active::after {
-    width: 100%; // Move this to the hover and active state
-    
+    &:hover::after,
+    &.nav-active::after {
+      width: 100%; // Move this to the hover and active state
+    }
   }
 }
+// @media (max-width: 768px) {
+//   .navigation {
+//     padding: 20px;
+
+//     img {
+//       width: 30%;
+//       margin: 0;
+//     }
+//     .navigation__ul {
+//       gap: 0;
+//       margin-right: -25px;
+//     }
+//     .navigation__li a {
+//       font-size: $font-s;
+//       margin-right: 20px;
+//       text-transform: uppercase;
+//     }
+//   }
+// }
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  // .Hero {
+  //   position: relative;
+  //   z-index: 1;
+  // }
+  .navigation__ul{
+    gap: 30px;
+  }
+  .navigation__li a{
+    font-size: $font-s;
+  }
 }
 @media (max-width: 768px) {
+  // .Hero {
+  //   position: relative;
+  //   z-index: 1;
+  // }
   .navigation {
     padding: 20px;
+    height: 10px;
 
-    img {
-     width: 30%;
-     margin: 0;
+    .navigation__ul {
+      gap: 30px;
     }
-    .navigation__ul{
-      gap:0;
-      margin-right: -25px;
-    }
-    .navigation__li a{
-      font-size: $font-s;
-      margin-right: 20px;
+
+    .navigation__li a {
+      font-size: $font-s; 
       text-transform: uppercase;
     }
   }
 }
-

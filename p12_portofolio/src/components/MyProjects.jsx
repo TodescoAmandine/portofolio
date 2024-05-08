@@ -4,6 +4,7 @@ import CardGrid from './CardGrid';
 
 const MyProjects = () => {
     return (
+        
         <section id='projects' className='projects__container'>        
             <div className='projects__content'>
                 <h2 className='projects__content--title'>My Projects</h2>

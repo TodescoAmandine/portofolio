@@ -1,17 +1,13 @@
 .projects__container{
     display: flex;
     padding: 112px 85px;
-
     gap: 80px;
-
-
 .projects__image{
     width: 50vw;
 
 }
 
 .projects__links{
-
     display: flex;
     flex-direction: row;
 }
@@ -20,7 +16,6 @@
     .projects__content{
         display: flex;
         flex-direction: column;
-
     }
     .projects__content--title{
     font-size: 24px;
@@ -51,5 +46,33 @@
     }
     .projects__content--git{
         width: 2vw;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .projects__container{
+        padding: 80px 60px;
+        gap: 60px;
+    }
+
+}
+@media (max-width: 768px) {
+    // #projects{
+    //     margin-top: 50px;
+    // }
+    .projects__container{
+        padding: 60px 40px;
+        gap: 40px;
+        flex-direction: column;
+        // margin-top: 50px;
+    }    
+    .projects__image{
+        width: 100%;
+    }
+    .projects__cards{
+        gap: 20px;
+    }
+    .projects__content--git{
+        width: 5vw;
     }
 }

@@ -15,7 +15,7 @@ const Home = () => {
         about={ <span>I'm a web junior developper. For me the web is a place where I can express my creativity and my passion for technology. I'm always looking for new challenges and I'm ready to learn new things. I'm a hard worker.
         </span>}
         />
-        <MyProjects/>
+        <MyProjects />
         <MySkills/>
         <Footer id="footer"/>
     </div>

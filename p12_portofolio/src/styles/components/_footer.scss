@@ -10,14 +10,8 @@
 .form__contenair{
     display: flex;
     flex-direction: column;
-    // width: 100%;
-    // height: 200px;
-    // background-color:rgb(12, 103, 103);
     align-items: center;
     justify-content: center;
-    // gap: 5px;
-    // padding-top: 50px;
-    // padding-bottom: 50px;
 }
 .form__title{
     font-weight: 300;
@@ -31,8 +25,6 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    /* gap: 32px; */
-    /* background: white; */
     box-shadow: 0 0 32px 0 rgba(0, 0, 0, 0.15);
     cursor: pointer;
     width: 500px;
@@ -41,11 +33,6 @@
     font-family: 'Roboto';
 }
 .form__message{
-    // display: flex;
-    // flex-direction: column;
-    // align-items: flex-start;
-    /* gap: 32px; */
-    /* background: white; */
     box-shadow: 0 0 32px 0 rgba(0, 0, 0, 0.15);
     cursor: pointer;
     width: 500px;
@@ -60,8 +47,8 @@
     color: $nav-color;
     margin-top: 20px;
     width: 100px;
-   font-size: $font-m;
-   font-weight: $font-w-m;
+    font-size: $font-m;
+    font-weight: $font-w-m;
     transition: background-color 0.3s ease;
 
     &:hover {
@@ -73,11 +60,52 @@
         color: white;
     }
 }
-@media (max-width: 768px){
-    .footer{
-       margin: 0 auto;
-        p{
-        font-size: $font-s;
-        }
+// @media (max-width: 768px){
+//     .footer{
+//        margin: 0 auto;
+//         p{
+//         font-size: $font-s;
+//         }
+//     }
+// }
+
+// ...
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    // Styles for tablets go here
+    .form__mail, .form__message {
+        width: 80%; // Adjust the width for tablets
+    }
+}
+
+@media (max-width: 768px) {
+    // Styles for mobiles go here
+    #footer {
+        padding-top: 50px;
+    }
+
+    .form__mail  {
+        width: 80%; 
+        height: 40px;
+        margin: 0;
+        padding: 0;
+        // Adjust the width for mobiles
+    }
+    .form__message {
+        width: 80%; 
+        margin: 0;
+        padding: 0;
+        // Adjust the width for mobiles
+    }
+
+    .form__title {
+        font-size: 16px; // Adjust the font size for mobiles
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .form__button {
+        width: 80px; // Adjust the width for mobiles
+        font-size: 14px; // Adjust the font size for mobiles
     }
 }

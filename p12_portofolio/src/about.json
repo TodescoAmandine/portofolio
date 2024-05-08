@@ -1,6 +1,7 @@
 [{
     "id": "1",
     "image": "./N_Y88TWmGwA.png",
+    "image_details": "/screen_ohmyfood.png",
     "title": "Ohmyfood",
     "content": "La mission de ce projet étais de faire le site avec des animations.",
     "tags": "HTML, CSS, SASS"
@@ -8,6 +9,7 @@
 {
     "id": "2",
     "image": "/Capture d'écran 2024-05-05 154431.png",
+    "image_details": "/screen_kasa.png",
     "title": "Kasa",
     "content": "Premier application construite de a à z en Réact.",
     "tags": "HTML, CSS, SASS, JavaScript, React"
