@@ -16,10 +16,10 @@
 {
     "id": "3",
     "image": "/spacejoy-IH7wPsjwomc-unsplash.png",
-    "image_details": "/screen_sophie.png",
+    "image_details": "/screen_sophie2.png",
     "title": "Sophie Bluel",
     "content": "Projet pour réaliser avec Java Script une connexion/déconnexion à travers une API, ainsi que l'accès à un compte pour ajout et suppression d'élément.",
-    "tags": "HTML, CSS,JavaScript"
+    "tags": "HTML, CSS, JavaScript"
 
 }
 ]

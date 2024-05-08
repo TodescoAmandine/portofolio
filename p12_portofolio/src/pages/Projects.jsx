@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { ProjectsContext } from '../pages/Projectcontext';
 import Navigation from '../components/Navigation';
-import Footer from '../components/Footer';
+
 
 // ...
 
@@ -11,10 +11,9 @@ const Projects = () => {
   const project = projectsData.find(project => project.id === id);
 
   return (
-    <div id='Projets__page'>
+    <div >
       <Navigation />
       <ProjectDetails project={project} />
-      <Footer/>
     </div>
   );
 };

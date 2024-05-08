@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 
 const Navigation = () => {
-    const [activeLink, setActiveLink] = useState('');
+    // const [activeLink, setActiveLink] = useState('');
 
-    const handleClick = (e) => {
-        setActiveLink(e.target.name);
-    };
+    // const handleClick = (e) => {
+    //     setActiveLink(e.target.name);
+    // };
 
     return (
         <div className='navigation'>

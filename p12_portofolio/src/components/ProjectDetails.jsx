@@ -16,10 +16,10 @@ const ProjectDetails = () => {
     const { image_details, title, content, tags } = project;
 
     return (
-        <div>
+        <div id='details_page'>
         <div className='projectdetails__container'>
-        <Link to="/">
-             <button>Back</button>
+        <Link className='button' to="/">
+             <button className='projectdetails__button'><i id='arrow__back' className="fa-solid fa-arrow-up"></i>Back</button>
         </Link>            
         <img className='projectdetails__image' src={image_details} alt="" />
             <div className='projectdetails__content'>
@@ -34,7 +34,14 @@ const ProjectDetails = () => {
                         <img className='projectdetails__content--git' src={IconeGit} alt="" />
                         </div>
                   </div>
-                <p className='projectdetails_content--tags'>{tags}</p>
+                  {/* {console.log('tags:', tags)} */}
+                  <div className='projectdetails_content--tags'>
+                    {tags.split(', ').map((tag, index) => (
+                        <button key={index} className='tag-button'>
+                        {tag}
+                        </button>
+                    ))}
+                    </div>
             </div>
             </div>
         </div>
