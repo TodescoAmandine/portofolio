@@ -3,16 +3,20 @@
     "image": "./N_Y88TWmGwA.png",
     "image_details": "/screen_ohmyfood.png",
     "title": "Ohmyfood",
-    "content": "La mission de ce projet étais de faire le site avec des animations.",
-    "tags": "HTML, CSS, SASS"
+    "content": "The mission was to develop a “mobile first” then tablet and desktop site, which lists the menus of gourmet restaurants. Site models via Figma were given, including animations and behaviors to integrate. The objective of the project was to discover animations, the SASS language with BEM and to start the project “mobile first”",
+    "tags": "HTML, CSS, SASS",
+    "url": "https://todescoamandine.github.io/Ohmyfood/index.html",
+    "code": "https://github.com/TodescoAmandine/Ohmyfood.git"
 },
 {
     "id": "2",
     "image": "/Capture d'écran 2024-05-05 154431.png",
     "image_details": "/screen_kasa.png",
     "title": "Kasa",
-    "content": "Premier application construite de a à z en Réact.",
-    "tags": "HTML, CSS, SASS, JavaScript, React"
+    "content": " La mission était d'une refonte totale d'une site toujours en étant reponsif pour tablette et mobile en Réact incluant un slider. Les maquettes à travers Figma ont été données. L'objectif à travers ce projet, était de créer une première application construite de a à z en Réact, découper le projet en plusieurs composants ré-utilisable et de gérer les états de l'application.",
+    "tags": "HTML, SASS, JavaScript, React",    
+    "url": "https://todescoamandine.github.io/Ohmyfood/index.html",
+    "code": "https://github.com/TodescoAmandine/Kasa.git"
 
 },
 {
@@ -20,8 +24,10 @@
     "image": "/spacejoy-IH7wPsjwomc-unsplash.png",
     "image_details": "/screen_sophie2.png",
     "title": "Sophie Bluel",
-    "content": "Projet pour réaliser avec Java Script une connexion/déconnexion à travers une API, ainsi que l'accès à un compte pour ajout et suppression d'élément.",
-    "tags": "HTML, CSS, JavaScript"
+    "content": "La mission était de créer plusieurs page d'un portofolio d'une photographe. Incluant une connexion avec un espace utilisateur qui permet ensuite à travers une modale: d'ajouter ou supprimer des photos à la galerie. Les maquettes à travers Figma ont été données. L'objectif de ce projet était de réaliser avec Java Script une connexion/déconnexion à travers une API, ainsi que l'accès à un compte pour ajout et suppression d'élément.",
+    "tags": "HTML, CSS, JavaScript",
+    "url": "https://todescoamandine.github.io/Ohmyfood/index.html",
+    "code": "https://github.com/TodescoAmandine/6_Sophie-Bluel.git"
 
 }
 ]

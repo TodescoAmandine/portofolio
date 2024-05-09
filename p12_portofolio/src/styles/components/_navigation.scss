@@ -29,8 +29,9 @@
     gap: 50px;
   }
 
+  //animation for the nav link
   .navigation__li a {
-    font-family: "Roboto", sans-serif;
+    font-family: $font;
     font-size: $font-m;
     font-weight: $font-w-m;
     color: $nav-color;
@@ -39,45 +40,23 @@
     &::after {
       content: "";
       height: 2px;
-      width: 0; // Change this to 0
+      width: 0; 
       background: $nav-color;
       position: absolute;
       bottom: 0;
       left: 0;
-      transition: width 0.3s ease-in-out; // Change this to transition
+      transition: width 0.3s ease-in-out; 
     }
 
     &:hover::after,
     &.nav-active::after {
-      width: 100%; // Move this to the hover and active state
+      width: 100%; 
     }
   }
 }
-// @media (max-width: 768px) {
-//   .navigation {
-//     padding: 20px;
-
-//     img {
-//       width: 30%;
-//       margin: 0;
-//     }
-//     .navigation__ul {
-//       gap: 0;
-//       margin-right: -25px;
-//     }
-//     .navigation__li a {
-//       font-size: $font-s;
-//       margin-right: 20px;
-//       text-transform: uppercase;
-//     }
-//   }
-// }
-
+//Media queries
 @media (min-width: 769px) and (max-width: 1024px) {
-  // .Hero {
-  //   position: relative;
-  //   z-index: 1;
-  // }
+
   .navigation__ul{
     gap: 30px;
   }
@@ -86,10 +65,7 @@
   }
 }
 @media (max-width: 768px) {
-  // .Hero {
-  //   position: relative;
-  //   z-index: 1;
-  // }
+
   .navigation {
     padding: 20px;
     height: 10px;

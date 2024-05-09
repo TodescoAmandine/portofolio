@@ -29,7 +29,7 @@
 
   #tag {
     position: absolute;
-    color: rgb(12, 103, 103);
+    color: $nav-color;
     font-family: "Roboto", sans-serif;
     font-size: 80px;
     font-weight: 700;
@@ -52,7 +52,32 @@
   }
 }
 
+@media (max-width: 1024px) {
+  #banner {
+    justify-content: center;
+  }
 
+  #banner #imgbanner {
+    height: 600px; // Use percentage instead of fixed px value
+    width: 100%;
+  }
+
+  #banner #tag {
+    font-size: 60px;
+    margin-top: 10%; // Use percentage instead of fixed px value
+    text-align: center;
+  }
+
+  #banner #about {
+    font-size: 15px;
+    margin-top: 40%; // Use percentage instead of fixed px value
+    width: 50%; // Use percentage instead of fixed px value
+    text-align: justify;
+  }
+}
+@media (min-width: 769px){
+
+}
 
 
 @media (max-width: 768px) {

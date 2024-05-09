@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     padding-top: 150px;
-    background: rgb(12, 103, 103);
+    background: $nav-color;
     padding-bottom: 80px;
     height: 800px;
 }
@@ -14,8 +14,8 @@
     justify-content: center;
 }
 .form__title{
-    font-weight: 300;
-    font-family: 'Roboto', sans-serif;
+    font-weight: $font-s;
+    font-family: $font;
     color: white;
     font-size: 18px;
     margin-top: 20px;
@@ -25,31 +25,32 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    box-shadow: 0 0 32px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: $shadow;
     cursor: pointer;
     width: 500px;
     padding: 16px;
     border: 0;
-    font-family: 'Roboto';
+    font-family: $font;
 }
 .form__message{
-    box-shadow: 0 0 32px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: $shadow;
     cursor: pointer;
     width: 500px;
     padding: 16px;
-    font-family: 'Roboto';
+    font-family: $font;
     height: 300px;
 }
 .form__button{
-    background-color:rgb(230,179,176);
+    background-color:$pink-color;
     border: 0;
     padding: 10px;
-    color: $nav-color;
+    color: rgb(5 55 55);
     margin-top: 20px;
     width: 100px;
-    font-size: $font-m;
+    font-size: $font-l;
     font-weight: $font-w-m;
     transition: background-color 0.3s ease;
+    font-family: $font;
 
     &:hover {
         background-color: darken(rgb(230,179,176), 10%);
@@ -60,52 +61,57 @@
         color: white;
     }
 }
-// @media (max-width: 768px){
-//     .footer{
-//        margin: 0 auto;
-//         p{
-//         font-size: $font-s;
-//         }
-//     }
-// }
 
-// ...
-
-@media (min-width: 769px) and (max-width: 1024px) {
-    // Styles for tablets go here
-    .form__mail, .form__message {
-        width: 80%; // Adjust the width for tablets
+@media (max-width: 1024px) {
+    #footer {
+      padding-top: 100px; 
+      height: auto; 
     }
-}
+  
+    .form__contenair {
+      width: 80%; 
+      margin: 0 auto; 
+    }
+  
+    .form__mail, .form__message {
+      width: 100%; 
+    }
+  
+    .form__button {
+      width: 80px; 
+      font-size: $font-ml; 
+      font-family: $font;
+    }
+  }
 
 @media (max-width: 768px) {
-    // Styles for mobiles go here
     #footer {
         padding-top: 50px;
     }
-
+.form__contenair{
+    width: 100%;
+}
     .form__mail  {
         width: 80%; 
         height: 40px;
         margin: 0;
         padding: 0;
-        // Adjust the width for mobiles
     }
     .form__message {
         width: 80%; 
         margin: 0;
         padding: 0;
-        // Adjust the width for mobiles
     }
 
     .form__title {
-        font-size: 16px; // Adjust the font size for mobiles
+        font-size: $font-ml; 
         margin-top: 10px;
         margin-bottom: 10px;
+        font-family: $font;
     }
 
     .form__button {
-        width: 80px; // Adjust the width for mobiles
-        font-size: 14px; // Adjust the font size for mobiles
+        width: 80px; 
+        font-size: $font-m; 
     }
 }

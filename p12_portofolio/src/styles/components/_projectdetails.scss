@@ -7,7 +7,9 @@
   .projectdetails__container {
     display: flex;
     padding: 112px 85px;
+    // padding: 112px 25px;
     gap: 80px;
+    // gap:30px;
   
     .button {
       height: 50px;
@@ -41,7 +43,8 @@
     .projectdetails__image {
       width: 500px;
       height: auto;
-      box-shadow: 0 0 32px 0 rgba(0, 0, 0, 0.15);
+      box-shadow: $shadow;
+      
     }
   
     .projectdetails__links {
@@ -55,10 +58,9 @@
       flex-direction: column;
     }
     .projectdetails__content--title {
-      font-size: 24px;
-      font-weight: 00;
-      line-height: 34px;
-      font-family: "Roboto", sans-serif;
+      font-size: $font-xl;
+      font-weight: $font-w-xl;
+      font-family: $font;
       color: $nav-color;
     }
     .projectdetails__contents {
@@ -66,24 +68,25 @@
       flex-direction: column;
     }
     .projectdetails__content--p {
-      font-family: "Roboto", sans-serif;
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 20px;
+      font-family: $font;
+      font-size: $font-ml;
+      font-weight: $font-ml;
+      text-align: justify;
     }
+
+    //animation for the link
     .projectdetails__content--link {
-      font-family: "Roboto", sans-serif;
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 20px;
+      font-family: $font;
+      font-size: $font-ml;
+      font-weight:$font-ml;
       transition: border-bottom 0.3s ease-in-out;
       overflow: hidden;
       position: relative;
       flex-wrap: nowrap;
       white-space: nowrap;
       cursor: pointer;
-      display: inline; /* Make the link an inline element */
-      margin-bottom: 0; /* Remove bottom margin */
+      display: inline; 
+      margin-bottom: 0; 
       padding-bottom: 0;
   
       &::after {
@@ -111,7 +114,7 @@
       gap: 42.6px;
       width: 100%;
     }
-  
+  //animation for the git icon
     @keyframes bounce {
       0%,
       20%,
@@ -145,46 +148,71 @@
       margin: 5px;
       color: white;
     }
+
   }
   
 
-  @media (min-width: 769px) and (max-width: 1024px) {
-    // Styles for tablets go here
+  //media queries
+  @media (min-width: 769px) and (max-width: 1024px){
+    #details_page {
+      background: rgb(235, 242, 242);
+      width: 100vw;
+      height: 100vh;
+    }
     .projectdetails__container{
-        padding: 80px 60px;
-    gap: 60px;
-
-    .projectdetails__image {
-      width: 400px;
+      padding: 112px 55px;
+      // padding: 112px 25px;
+      gap:30px;
     }
   }
 
-  @media (max-width: 768px) {
-    .projectdetails__container{
-        padding: 60px 40px;
-        gap: 40px;
+    @media (max-width: 768px) {
+      #details_page{
+        height: 100vh;
+      }
+      .projectdetails__container {
+         padding: 20px;
+         display: flex;
+         flex-direction: column;
+      }
+      .projectdetails__container .button{
+        height: 10px;
+      }
+      .projectdetails__container .projectdetails__image {
+        width: 280px;
+        display: block;
+        margin: auto;
+        width: 80%
+      }
+      .projectdetails__container .projectdetails__content{
+        margin-top: -60px;
+      }
+      .projectdetails__container .projectdetails__links {
+        display: flex;
         flex-direction: column;
-    }   
+    }
+    .projectdetails__container .projectdetails__content--link {
+      &::after {
+        content: "";
+        position: absolute;
+        width: 0%;
+        height: 1.33px;
+        background: currentColor;
+        bottom: 0;
+        left: 0;
+        transition: width 0.3s ease-in-out;
+        opacity: 0;
 
-    .projectdetails__image {
-      width: 100%;
+      }
+
+      &:hover::after {
+        width: 50%; 
+        opacity: 1;
+      }
+    
+    }
+    .projectdetails__container .projectdetails__content--git {
+      margin: 15px 0;
     }
 
-    .projectdetails__content--title {
-      font-size: 20px;
-    }
-
-    .projectdetails__content--p {
-      font-size: 14px;
-    }
-
-    .projectdetails__content--link {
-      font-size: 14px;
-    }
-
-    .projectdetails__content--git {
-      width: 30px;
-      height: 30px;
-    }
   }
-}

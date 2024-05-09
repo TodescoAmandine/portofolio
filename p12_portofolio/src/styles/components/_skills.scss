@@ -1,5 +1,5 @@
 #skills {
-    background: rgb(230, 179, 176, 30%);
+    background: $pink-light;
     height: 800px;
     display: flex;
     justify-content: space-between;
@@ -7,18 +7,16 @@
     padding: 80px 50px;
   
     .skills__content--title {
-      font-size: 24px;
-      font-weight: 700;
-      line-height: 34px;
-      font-family: "Roboto", sans-serif;
+      font-size: $font-xl;
+      font-weight: $font-w-xl;
+      font-family: $font;
       color: $nav-color;
     }
   
     .skills__content--p {
-      font-family: "Roboto", sans-serif;
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 20px;
+      font-family: $font;
+      font-size: $font-ml;
+      font-weight: $font-ml;
       padding-left: 50px;
       flex: 1;
     }
@@ -42,11 +40,11 @@
     }    
 
     .skills__content--title {
-      font-size: 20px;
+      font-size: $font-l;
     }
 
     .skills__content--p {
-      font-size: 14px;
+      font-size: $font-m;
       padding-left: 30px;
     }
 
@@ -68,20 +66,17 @@
     }    
 
     .skills__content--title {
-      font-size: 18px;
+      font-size: $font-l;
     }
     #skills .skills__content--p  {
-      font-size: 12px;
+      font-size: $font-s;
       text-align: justify;
       padding: 0;
     }
 
-    #skills_container--icones {
-      margin-top: 40px;
-
-      .skills--icones {
-        width: 60px;
-        height: 60px;
-      }
+    #skills #skills_container--icones .skills--icones{
+      width: 60px;
+      height: 60px;
     }
-  }
+    }
+  
