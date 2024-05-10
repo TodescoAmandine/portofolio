@@ -15,7 +15,7 @@ const CardGrid = () => {
     return (
         <div className='cards__container'>
             {aboutData.map((data, index) => (
-                <Card key={index} image={data.image} title={data.title} content={data.content} tags={data.tags} onClick={() => handleCardClick(data)} />
+                <Card key={index} image={data.image} title={data.title} content={data.short_content} tags={data.tags} onClick={() => handleCardClick(data)} />
             ))}
         </div>
     );

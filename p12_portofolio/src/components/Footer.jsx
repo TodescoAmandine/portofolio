@@ -4,7 +4,7 @@ const Form = () => {
     const handleSubmit = (event) => {
         event.preventDefault();
 
-        emailjs.sendForm('service_42rww0z', 'template_1phqwdd', event.target, 'Tw2GbAbSsyjkybULR')
+        emailjs.sendForm('', '', event.target, '')
         .then((result) => {
             console.log(result.text);
             event.target.reset();
@@ -17,6 +17,8 @@ const Form = () => {
 
     return (
         <div id="footer">
+            <h2 className='footer__title'>Contact me</h2>
+
 <form className='form__contenair' onSubmit={handleSubmit}>
   <label className='form__title' htmlFor="user_name">Name:</label>
   <input className='form__mail' type="text" id="user_name" name="user_name" required />
